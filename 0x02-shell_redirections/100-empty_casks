@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -exec ls --format=single-column {} \;
+find ./* -type f -empty -exec ls --format=single-column {} \;
