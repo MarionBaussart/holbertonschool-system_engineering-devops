@@ -1,4 +1,4 @@
 #!/bin/bash
 # 'blabla' protègent tout sauf les '
 # "blabla" protègent tout sauf les "
-echo "Best School" >> "\*\\\'\"Best School\"\'\\*$\?\*\*\*\*\*:)"
+echo "Best School" >> "\*\\\'\"Best School\"\'\\\*$\?\*\*\*\*\*:)"
