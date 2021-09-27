@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name "*.gif" -o -name ".*" \) -print -exec ls {};
+find . -name "*.gif" -print | cut -d . -f2 | cut -d/ -f2
