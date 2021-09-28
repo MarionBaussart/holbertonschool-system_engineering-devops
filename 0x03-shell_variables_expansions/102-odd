@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | xargs -n2 -d'\n' | cut -f1
+ls -1 | xargs -n2 | cut -d ' ' -f1
