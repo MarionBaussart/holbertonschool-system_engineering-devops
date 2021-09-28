@@ -1,0 +1,3 @@
+#!/bin/bash
+#printenv or env : list environnement
+printenv
