@@ -2,7 +2,6 @@
 # display Best School 10 times with until loop
 
 i=1
-until [ $i -gt 10 ]; do
+until ((i++>10)); do
     echo 'Best School'
-    ((i++))
 done
