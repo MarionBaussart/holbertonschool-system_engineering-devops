@@ -26,3 +26,10 @@ Write a Bash script that displays the PID, along with the process name, of proce
 Requirements:
 
 * You cannot use ps
+
+## 4. To infinity and beyond
+Write a Bash script that displays To infinity and beyond indefinitely.
+
+Requirements:
+
+* In between each iteration of the loop, add a sleep 2
