@@ -33,3 +33,12 @@ Write a Bash script that displays To infinity and beyond indefinitely.
 Requirements:
 
 * In between each iteration of the loop, add a sleep 2
+
+## 5. Don't stop me now!
+We stopped our 4-to_infinity_and_beyond process using ctrl+c in the previous task, there is actually another way to do this.
+
+Write a Bash script that stops 4-to_infinity_and_beyond process.
+
+Requirements:
+
+* You must use kill
