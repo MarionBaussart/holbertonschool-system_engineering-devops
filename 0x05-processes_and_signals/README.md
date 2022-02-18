@@ -42,3 +42,10 @@ Write a Bash script that stops 4-to_infinity_and_beyond process.
 Requirements:
 
 * You must use kill
+
+## 6. Stop me if you can
+Write a Bash script that stops 4-to_infinity_and_beyond process.
+
+Requirements:
+
+* You cannot use kill or killall
