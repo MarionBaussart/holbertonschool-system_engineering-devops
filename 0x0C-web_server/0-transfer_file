@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that transfers a file from our client to a server
 
-nb_args=$#
-if [ $nb_args -eq 4 ]
+if [ "$#" -eq 4 ]
 then
     scp -i "$4" "$1" "$3"@"$2":~/
 else
