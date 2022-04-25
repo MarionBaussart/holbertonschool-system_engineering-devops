@@ -12,6 +12,6 @@ echo "frontend http
 backend web-backend
     balance roundrobin
     server  3328-web-01 35.237.22.35 check
-    server  3328-web-02 35.237.118.104 check" > /etc/haproxy/haproxy.cfg
+    server  3328-web-02 35.237.118.104 check" >> /etc/haproxy/haproxy.cfg
 
 service haproxy start
