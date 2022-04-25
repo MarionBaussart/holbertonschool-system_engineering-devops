@@ -1,6 +1,6 @@
 # creating a custom HTTP header response
 exec { 'update':
-    command => 'apt update -y',
+    command => '/usr/bin/apt update -y',
 }
 
 package { 'nginx':
