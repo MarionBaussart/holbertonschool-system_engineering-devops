@@ -8,7 +8,7 @@ import sys
 if __name__ == "__main__":
 
     employee_ID = sys.argv[1]
-    file_name = employee_ID + ".csv"
+    file_name = employee_ID + ".json"
     user = requests.get(
                         'https://jsonplaceholder.typicode.com/users/{}'
                         .format(employee_ID)
