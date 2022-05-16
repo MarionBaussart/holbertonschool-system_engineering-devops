@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ export data in the json format using T0 """
-
 import json
 import requests
 import sys
+
 
 if __name__ == "__main__":
 

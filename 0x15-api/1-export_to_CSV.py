@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ export data to CSV format using T0 """
-
 import csv
 import requests
 import sys
+
 
 if __name__ == "__main__":
 
