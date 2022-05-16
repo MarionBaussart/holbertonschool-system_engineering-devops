@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" export data in the CSV format using T0 """
+""" export data to CSV format using T0 """
 
 import csv
 import requests
@@ -34,7 +34,7 @@ if __name__ == "__main__":
                             [
                              employee_ID,
                              user.get("username"),
-                             task.get("completed"),
+                             str(task.get("completed")),
                              task.get("title")
                              ]
                             )
