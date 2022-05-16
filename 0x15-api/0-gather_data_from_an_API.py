@@ -33,4 +33,4 @@ if __name__ == "__main__":
                                         nb_total_task))
 
     for task in task_done:
-        print("\t{}".format(task))
+        print("\t {}".format(task))
