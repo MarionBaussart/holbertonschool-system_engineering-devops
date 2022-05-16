@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-""" export data in the json format using T0
-Format must be: { "USER_ID": [{"task": "TASK_TITLE",
-                               "completed": TASK_COMPLETED_STATUS,
-                               "username": "USERNAME"},
-                         ... ]} """
+""" export data in the json format using T0 """
 
 import json
 import requests
@@ -17,17 +13,17 @@ if __name__ == "__main__":
                         .format(employee_ID)
                         ).json()
     todos = requests.get(
-                        'https://jsonplaceholder.typicode.com/users/{}/todos'
-                        .format(employee_ID)
+                        'https://jsonplaceholder.typicode.com/todos'
                         ).json()
     task_dict = {}
     task_list = []
 
     for task in todos:
-        dict = {"task": task.get("title"),
-                "completed": task.get("completed"),
-                "username": user.get("username")}
-        task_list.append(dict)
+        if task.get('userId') == int(id):
+            dict = {"task": task.get("title"),
+                    "completed": task.get("completed"),
+                    "username": user.get("username")}
+            task_list.append(dict)
     task_dict[employee_ID] = task_list
 
     with open(f'{employee_ID}.json', 'w') as f:
