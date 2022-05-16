@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" export data in the CSV format using T0
-Format must be: "USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE" """
+""" export data in the CSV format using T0 """
 
 import csv
 import requests
