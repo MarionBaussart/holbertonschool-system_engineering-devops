@@ -8,6 +8,7 @@ import sys
 if __name__ == "__main__":
 
     employee_ID = sys.argv[1]
+    file_name = employee_ID + ".csv"
     user = requests.get(
                         'https://jsonplaceholder.typicode.com/users/{}'
                         .format(employee_ID)).json()
@@ -16,7 +17,7 @@ if __name__ == "__main__":
                         .format(employee_ID)
                         ).json()
 
-    with open(f'{employee_ID}.csv', 'w') as f:
+    with open(file_name, 'w') as f:
         writer = csv.writer(
                             f,
                             delimiter=',',
