@@ -4,21 +4,17 @@
 import csv
 import requests
 import sys
-from urllib import response
 
 if __name__ == "__main__":
 
     employee_ID = sys.argv[1]
-    response = requests.get(
+    user = requests.get(
                         'https://jsonplaceholder.typicode.com/users/{}'
-                        .format(employee_ID)
-                        )
-    user = response.json()
-    response = requests.get(
+                        .format(employee_ID)).json()
+    todos = requests.get(
                         'https://jsonplaceholder.typicode.com/users/{}/todos'
                         .format(employee_ID)
-                        )
-    todos = response.json()
+                        ).json()
 
     with open(f'{employee_ID}.csv', 'w') as f:
         writer = csv.writer(
