@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that configures SSH configuration file for the local SSH client
+# connect to a server without typing a password
+# SSH client configuration must be configured
+# to use the private key ~/.ssh/school
+# to refuse to authenticate using a password
+
+ssh-agent $BASH
+ssh-add ~/.ssh/school
