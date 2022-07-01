@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains
+
+if [ $# -eq 1 ]
+then
+    subdomains=("www" "lb-01" "web-01" "web-02")
+    for subdomain in "${subdomains[@]}"
+    do
+        
+
+
+
+fi
+
+The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]
